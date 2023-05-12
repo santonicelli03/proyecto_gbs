@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  list-style: none; }
+
+header {
+  background: rgba(13, 24, 33, 0.93);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 45px;
+  font-size: 20px;
+  position: fixed;
+  width: calc(100% - 90px);
+  border-bottom: 2px solid #1F9CFF;
+  font-size: 22px; }
+  header .header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F0F4EF; }
+    header .header__logo img {
+      height: 80px; }
+  header .header__menu {
+    justify-content: space-between;
+    display: flex;
+    padding: 0; }
+    header .header__menu li {
+      padding: 5px 10px; }
+      header .header__menu li a {
+        color: #F0F4EF; }
+
+footer {
+  background: rgba(24, 20, 17, 0.93);
+  width: calc(100% - 90px);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  color: #F0F4EF;
+  border-top: 2px solid #E71D36;
+  padding: 10px 45px;
+  justify-content: space-between;
+  align-items: center; }
+  footer .footer__list {
+    display: flex;
+    flex-direction: row; }
+    footer .footer__list li {
+      padding: 5px 10px; }
+      footer .footer__list li a {
+        color: #F0F4EF; }
+
+#home {
+  background: linear-gradient(-45deg, rgba(31, 156, 255, 0.2), rgba(231, 29, 54, 0.2)) no-repeat, url(../img/home--wp.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+#home__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0F4EF;
+  height: 100vh;
+  font-size: 40px; }

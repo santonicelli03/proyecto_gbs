@@ -1,0 +1,23 @@
+footer {
+    background: transparentize($dark_red, 0.07);
+    width: calc(100% - 90px);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    color: $light;
+    border-top: 2px solid $red;
+    padding: 10px 45px;
+    justify-content: space-between;
+    align-items: center;
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 5px 10px;
+            a {
+                color: $light;
+            }
+        }
+    }
+}
