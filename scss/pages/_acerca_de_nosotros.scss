@@ -1,0 +1,19 @@
+#acerca_de_nosotros {
+    background: linear-gradient(-45deg, transparentize($blue, 0.8), transparentize($red, 0.8)) no-repeat, url(../img/acerca_de_nosotros--wp.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#acerca_de_nosotros__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    height: 100vh;
+}
+
+.acerca_de_nosotros__div {
+    background: transparentize($dark, 0.07);
+    border: 1px solid $blue;
+    padding: 30px 40px;
+    font-size: 22px;
+}

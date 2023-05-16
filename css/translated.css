@@ -64,3 +64,114 @@ footer {
   color: #F0F4EF;
   height: 100vh;
   font-size: 40px; }
+
+#novedades {
+  background: linear-gradient(-45deg, rgba(31, 156, 255, 0.2), rgba(231, 29, 54, 0.2)) no-repeat, url(../img/novedades--wp.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+#novedades__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0F4EF;
+  height: 100vh;
+  font-size: 40px; }
+
+#bolsa_de_trabajo {
+  background: linear-gradient(-45deg, rgba(31, 156, 255, 0.2), rgba(231, 29, 54, 0.2)) no-repeat, url(../img/bolsa_de_trabajo--wp.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+#bolsa_de_trabajo__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0F4EF;
+  height: 100vh; }
+
+.bolsa_de_trabajo__form {
+  background: rgba(13, 24, 33, 0.93);
+  border: 1px solid #1F9CFF;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px; }
+  .bolsa_de_trabajo__form__span {
+    font-size: 22px; }
+  .bolsa_de_trabajo__form__input {
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1F9CFF;
+    color: #F0F4EF;
+    border-radius: 2px; }
+    .bolsa_de_trabajo__form__input--submit {
+      border: 1px solid #1F9CFF;
+      width: 25%;
+      color: #1F9CFF;
+      cursor: pointer; }
+      .bolsa_de_trabajo__form__input--submit:active {
+        background: rgba(13, 24, 33, 0.93); }
+    .bolsa_de_trabajo__form__input::placeholder {
+      color: #F0F4EF; }
+
+#torneos_fixtures {
+  background: linear-gradient(-45deg, rgba(31, 156, 255, 0.2), rgba(231, 29, 54, 0.2)) no-repeat, url(../img/torneos_fixtures--wp.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+#torneos_fixtures__section {
+  display: flex;
+  justify-content: center;
+  color: #F0F4EF; }
+
+.torneos_fixtures__table {
+  background: rgba(13, 24, 33, 0.93);
+  border: 1px solid #1F9CFF;
+  padding: 20px 50px;
+  margin-top: 160px;
+  border-spacing: 0;
+  font-size: 24px; }
+  .torneos_fixtures__table__title {
+    font-size: 40px;
+    margin-bottom: 15px; }
+  .torneos_fixtures__table__head {
+    border-bottom: 2px solid #1F9CFF; }
+  .torneos_fixtures__table__body__row__cell-icon {
+    height: 42px;
+    width: 42px;
+    display: block; }
+    .torneos_fixtures__table__body__row__cell-icon-uba {
+      background: url(../img/uba.png);
+      background-size: cover; }
+    .torneos_fixtures__table__body__row__cell-icon-lanus {
+      background: url(../img/lanus.png);
+      background-size: cover; }
+    .torneos_fixtures__table__body__row__cell-icon-comu {
+      background: url(../img/comu.png);
+      background-size: cover; }
+    .torneos_fixtures__table__body__row__cell-icon-sanfer {
+      background: url(../img/sanfer.png);
+      background-size: cover; }
+    .torneos_fixtures__table__body__row__cell-icon-defe {
+      background: url(../img/defe.png);
+      background-size: cover; }
+    .torneos_fixtures__table__body__row__cell-icon-sanlo {
+      background: url(../img/sanlo.png);
+      background-size: cover; }
+  .torneos_fixtures__table td {
+    padding: 5px; }
+
+#acerca_de_nosotros {
+  background: linear-gradient(-45deg, rgba(31, 156, 255, 0.2), rgba(231, 29, 54, 0.2)) no-repeat, url(../img/acerca_de_nosotros--wp.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+#acerca_de_nosotros__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F0F4EF;
+  height: 100vh; }
+
+.acerca_de_nosotros__div {
+  background: rgba(13, 24, 33, 0.93);
+  border: 1px solid #1F9CFF;
+  padding: 30px 40px;
+  font-size: 22px; }

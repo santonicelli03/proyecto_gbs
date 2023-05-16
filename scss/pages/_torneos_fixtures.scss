@@ -1,0 +1,64 @@
+#torneos_fixtures {
+    background: linear-gradient(-45deg, transparentize($blue, 0.8), transparentize($red, 0.8)) no-repeat, url(../img/torneos_fixtures--wp.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#torneos_fixtures__section {
+    display: flex;
+    justify-content: center;
+    color: $light;
+}
+
+.torneos_fixtures__table {
+    background: transparentize($dark, 0.07);
+    border: 1px solid $blue;
+    padding: 20px 50px;
+    margin-top: 160px;
+    border-spacing: 0;
+    font-size: 24px;
+    &__title {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    &__head {
+        border-bottom: 2px solid $blue;
+    }
+    &__body {
+        &__row {
+            &__cell {
+                &-icon {
+                    height: 42px;
+                    width: 42px;
+                    display: block;
+                    &-uba {
+                        background: url(../img/uba.png);
+                        background-size: cover;
+                    }
+                    &-lanus {
+                        background: url(../img/lanus.png);
+                        background-size: cover;
+                    }
+                    &-comu {
+                        background: url(../img/comu.png);
+                        background-size: cover;
+                    }
+                    &-sanfer {
+                        background: url(../img/sanfer.png);
+                        background-size: cover;
+                    }
+                    &-defe {
+                        background: url(../img/defe.png);
+                        background-size: cover;
+                    }
+                    &-sanlo {
+                        background: url(../img/sanlo.png);
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+    td {
+        padding: 5px;
+    }
+}
