@@ -12,13 +12,13 @@
 .torneos_fixtures__table {
     background: transparentize($dark, 0.07);
     border: 1px solid $blue;
-    padding: 20px 50px;
-    margin-top: 160px;
     border-spacing: 0;
     font-size: 24px;
+    transition: .2s;
     &__title {
         font-size: 40px;
         margin-bottom: 15px;
+        filter: drop-shadow(2px 2px 2px $red) drop-shadow(-2px -2px 2px $blue);
     }
     &__head {
         border-bottom: 2px solid $blue;
@@ -60,5 +60,20 @@
     }
     td {
         padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .torneos_fixtures__table {
+        font-size: 18px;
+        &__body__row__cell-icon {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .torneos_fixtures__table {
     }
 }

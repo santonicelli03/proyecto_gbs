@@ -3,20 +3,37 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 45px;
+    padding: 10px 3%;
     font-size: 20px;
     position: fixed;
-    width: calc(100% - 90px);
+    top: 0;
+    width: 94%;
     border-bottom: 2px solid $blue;
     font-size: 22px;
+    z-index: 100;
     .header__logo {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-style: italic;
         color: $light;
+        transition: .2s;
         img {
             height: 80px;
+        }
+        &--on {
+            filter: drop-shadow(2px 2px 2px $red) drop-shadow(-2px -2px 2px $blue);
+        }
+        &:hover {
+            color: $blue;
+            filter: drop-shadow(0 0 4px $blue);
+        }
+        &:active {
+            color: $red;
+            filter: drop-shadow(0 0 4px $red);
+            transition: .3s;
+            transform: scale(.9,.9);
         }
     }
     .header__menu {
@@ -25,9 +42,78 @@ header {
         padding: 0;
         li {
             padding: 5px 10px;
-            a {
-                color: $light;
+            transition: .2s;
+            &:active {
+                transform: scale(.9,.9);
             }
+            .header__menu__link {
+                color: $light;
+                &--on {
+                    filter: drop-shadow(2px 2px 2px $red) drop-shadow(-2px -2px 2px $blue);
+                }
+                &:hover {
+                    color: $blue;
+                    filter: drop-shadow(0 0 4px $blue);
+                }
+                &:active {
+                    color: $red;
+                    filter: drop-shadow(0 0 4px $red);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        .header__logo {
+            z-index: 100;
+        }
+        .header__menu {
+            font-size: 18px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 94%;
+            max-height: 74px;
+            position: absolute;
+            align-content: space-between;
+            &::before {
+                order: 1;
+                content: "";
+                width: 145px;
+                height: 1px;
+                background: linear-gradient(to left, #0000 0%, $blue 20%, $blue 80%, #0000 100%);
+            }
+            &::after {
+                order: 3;
+                content: "";
+                width: 145px;
+                height: 1px;
+                background: linear-gradient(to left, #0000 0%, $blue 20%, $blue 80%, #0000 100%);
+            }
+            li {
+                text-align: center;
+                width: 125px;
+                order: 2;
+                &:first-child {
+                    order: 0;
+                }
+                &:last-child {
+                    order: 4;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__menu {
+        width: 105%!important;
+        li {
+            font-size: 16px;
         }
     }
 }

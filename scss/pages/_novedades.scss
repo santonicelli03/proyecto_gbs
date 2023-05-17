@@ -8,6 +8,15 @@
     justify-content: center;
     align-items: center;
     color: $light;
-    height: 100vh;
-    font-size: 40px;
+    padding: 2%;
+    text-align: center;
+    .novedades__titulo {
+        font-size: 42px;
+        filter: drop-shadow(2px 2px 2px $red) drop-shadow(-2px -2px 2px $blue);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
 }

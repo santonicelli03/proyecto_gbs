@@ -3,4 +3,15 @@
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
     list-style: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    section {
+        margin: 150px 0;
+    }
 }
